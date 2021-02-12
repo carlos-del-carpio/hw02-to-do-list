@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">To Do List</string>
+    <string name="upcoming_tasks">Upcoming Tasks</string>
+    <string name="view_tasks">View Tasks</string>
+    <string name="create_a_task">Create A Task</string>
 </resources>
