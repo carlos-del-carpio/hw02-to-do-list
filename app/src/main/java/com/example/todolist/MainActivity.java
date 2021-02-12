@@ -15,14 +15,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        numberOfUpcomingTasksLabel = findViewById(R.id.numberOfUpcomingTasksLabel);
         Tasks = new ArrayList<>();
+
         updateTaskCount(Tasks.size());
     }
 
     public void updateTaskCount (int count) {
-        String numberOfTasks;
-        numberOfUpcomingTasksLabel = findViewById(R.id.numberOfUpcomingTasksLabel);
-        numberOfTasks = getString(R.string.you_have) + " " + String.valueOf(count) + " " + getString(R.string.tasks);
+        String numberOfTasks = "None";
+
+        if (count > 0) {
+            numberOfTasks = getString(R.string.you_have) + " " + String.valueOf(count) + " " + getString(R.string.tasks);
+        }
+
         numberOfUpcomingTasksLabel.setText(numberOfTasks);
     }
 }
