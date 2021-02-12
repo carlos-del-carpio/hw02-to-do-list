@@ -3,4 +3,6 @@
     <string name="upcoming_tasks">Upcoming Tasks</string>
     <string name="view_tasks">View Tasks</string>
     <string name="create_a_task">Create A Task</string>
+    <string name="you_have">You have</string>
+    <string name="tasks">tasks</string>
 </resources>
