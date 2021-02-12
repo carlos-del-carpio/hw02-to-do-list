@@ -2,6 +2,7 @@ package com.example.todolist;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -9,6 +10,8 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     ArrayList<Task> Tasks;
     TextView numberOfUpcomingTasksLabel;
+    Button viewTasksButton;
+    Button createATaskButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         numberOfUpcomingTasksLabel = findViewById(R.id.numberOfUpcomingTasksLabel);
+        viewTasksButton = findViewById(R.id.viewTasksButton);
+        createATaskButton = findViewById(R.id.createATaskButton);
         Tasks = new ArrayList<>();
 
         updateTaskCount(Tasks.size());
