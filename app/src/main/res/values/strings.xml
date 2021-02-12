@@ -5,4 +5,11 @@
     <string name="create_a_task">Create A Task</string>
     <string name="you_have">You have</string>
     <string name="tasks">tasks</string>
+    <string name="task_information">Task Information</string>
+    <string name="name">Name:</string>
+    <string name="date">Date:</string>
+    <string name="priority">Priority:</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="display_task">Display Task</string>
 </resources>

@@ -1,7 +1,10 @@
 package com.example.todolist;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -24,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
         Tasks = new ArrayList<>();
 
         updateTaskCount(Tasks.size());
+
+        viewTasksButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        });
     }
 
     public void updateTaskCount (int count) {

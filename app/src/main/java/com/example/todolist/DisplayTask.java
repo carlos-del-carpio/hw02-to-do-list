@@ -10,5 +10,6 @@ public class DisplayTask extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_task);
+        setTitle(getString(R.string.display_task));
     }
 }
