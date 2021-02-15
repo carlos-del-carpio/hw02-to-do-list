@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     Button viewTasksButton;
     Button createATaskButton;
 
+    final static public int CREATE_A_TASK_REQUEST_CODE = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +55,14 @@ public class MainActivity extends AppCompatActivity {
 
                 AlertDialog viewTasksAlertDialog = tasksAlertDialogBuilder.create();
                 viewTasksAlertDialog.show();
+            }
+        });
+
+        createATaskButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToCreateATask = new Intent(MainActivity.this, CreateTask.class);
+                startActivityForResult(goToCreateATask, CREATE_A_TASK_REQUEST_CODE);
             }
         });
     }
